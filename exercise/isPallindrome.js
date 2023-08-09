@@ -7,3 +7,9 @@ isPallindrome('ababA') -> true
 isPallindrome('abc') -> false
 
 */
+
+function isPallindrome(str) {
+  return str.toLowerCase().split("").reverse().join("") === str.toLowerCase();
+}
+
+console.log(isPallindrome("ababA"));
