@@ -1,39 +1,40 @@
-// function sum(a) {
-//   return function (b) {
-//     return function (c) {
-//       return a + b + c;
-//     };
-//   };
-// }
+/*
 
-// console.log(sum(1)(2)(3));
+Given a function sum write a curried function
 
 function sum(a, b, c, d) {
   return a + b + c + d;
 }
 
-const join = (a, b, c) => {
-  return `${a}_${b}_${c}`;
-};
+const curriedSum = curry(sum);
 
-// curriedSum(1)(2)(3)(4)
+curriedSum(1)(2)(3)  // 6
+curriedSum(2)(4)(4) // 10
 
-function curry(fn) {
-  function inner(...args) {
-    if (args.length === fn.length) {
-      return fn(...args);
-    } else {
-      return inner.bind(this, ...args);
-    }
-  }
+*/
 
-  return inner;
+// ----------------------------------------------
+
+/*
+
+Write a generic curry function which when passed any function would return its curry function
+
+function sum(a, b, c, d) {
+  return a + b + c + d;
 }
-
-const curriedJoin = curry(join);
 
 const curriedSum = curry(sum);
 
-console.log(curriedSum(1)(2)(3)(4));
+curriedSum(1)(2)(3)  // 6
+curriedSum(2)(5) // 7
+curriedSum(1)(2)(3)(4) // 10
 
-console.log(curriedJoin(1)(2)(3));
+function(a, b, c){
+  return `${a}_${b}_${c}`;
+};
+
+const curriedJoin = curry(join);
+curriedJoin(1)(2)(3) -> 1_2_3
+curriedJoin(1)(2)(3)(4) -> 1_2_3_4
+
+*/

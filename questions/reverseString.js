@@ -2,11 +2,5 @@
 
 /*
     reverse("Hello World")
+    output -> dlroW olleH
 */
-
-function reverse(text) {
-  const reversedString = text.split("").reverse().join("");
-  return reversedString;
-}
-
-console.log(reverse("Hello World"));
