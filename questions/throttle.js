@@ -23,3 +23,34 @@ No more typing
 Delay is over - Call throttled function with Aashi
 
 */
+
+function throttle(cb, wait) {
+  let isBlocked = false;
+  return function (...args) {
+    if (!isBlocked) {
+      cb(...args);
+      isBlocked = true;
+      setTimeout(() => {
+        isBlocked = false;
+      }, wait);
+    }
+  };
+}
+
+function throttleWithTrailing(cb, wait) {
+  let isBlocked = false;
+  let lastArgs = null;
+  return function (...args) {
+    if (!isBlocked) {
+      cb(...args);
+      isBlocked = true;
+      lastArgs = null;
+
+      setTimeout(() => {
+        isBlocked = false;
+      }, wait);
+    } else {
+      lastArgs = args;
+    }
+  };
+}

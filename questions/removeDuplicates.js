@@ -3,3 +3,11 @@
 
     removeDuplicates('aabbcc') -> abc
 */
+
+function removeDuplicates(str) {
+  let arr = str.split("");
+  let set = new Set(arr);
+  return Array.from(set).join("");
+}
+
+console.log(removeDuplicates("aabbccd"));
