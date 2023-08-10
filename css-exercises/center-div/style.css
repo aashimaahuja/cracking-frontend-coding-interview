@@ -2,6 +2,9 @@
   width: 500px;
   height: 500px;
   background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .child {
@@ -9,3 +12,26 @@
   height: 200px;
   background-color: orange;
 }
+
+/* Solution with grid
+
+  .parent {
+    display: grid;
+    place-items: center;
+  }
+*/
+
+/* Solution without using flex or grid
+
+  .parent {
+    position: relative;
+  }
+
+  .child {
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform: translate(-50%, -50%);
+  }
+
+*/
