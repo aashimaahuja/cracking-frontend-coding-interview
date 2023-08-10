@@ -48,3 +48,26 @@ optimisation techniques. It basically controls how many times your functions get
 <img src="images/throttle2.png"/>
 
 ---
+
+### Event Loop
+
+```js
+var a = 2;
+function foo() {
+  console.log("foo");
+}
+function bar() {
+  setTimeout(() => {
+    console.log("bar");
+  }, 0);
+}
+
+bar();
+foo();
+fetch("/users").then(displayUsers);
+```
+
+<img src="images/jsExecution.png" />
+
+- SetTimeout callback goes into callback queue
+- Promises are sent to microtask queue
