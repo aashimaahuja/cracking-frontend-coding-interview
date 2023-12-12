@@ -5,7 +5,7 @@
 HTML 5 introduced the new semantic tags like `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`, `<main>`, etc.
 Before HTML5 , the code structure would look something like this (full of divs)
 
-<img src="/images/html-vs-html5.png"/>
+<img src="../images/html-vs-html5.png"/>
 
 ```html
 <div id="main">
@@ -159,7 +159,7 @@ To offload some of its work, heavy calculations can be offloaded to a parallel t
 
 - Web worker can't perform any DOM manipulation
 
-<img src="/images/web-worker.png" width="100%" height="80%"/>
+<img src="../images/web-worker.png" width="100%" height="80%"/>
 
 _Coding Demo_
 

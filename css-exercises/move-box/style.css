@@ -2,4 +2,23 @@
   background-color: red;
   height: 150px;
   width: 150px;
+  animation: moveBox 5s;
+}
+
+@keyframes moveBox {
+  0% {
+    /* transform: translate(0, 0); */
+    position: absolute;
+    left: 10px;
+  }
+  50% {
+    /* transform: translate(100px, 0); */
+    position: absolute;
+    left: 100px;
+  }
+  100% {
+    /* transform: translate(0, 0); */
+    position: absolute;
+    left: 10px;
+  }
 }
