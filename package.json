@@ -1,0 +1,19 @@
+{
+  "name": "cracking-frontend-coding-interview",
+  "version": "1.0.0",
+  "description": "Cracking the frontend interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aashimaahuja/cracking-frontend-coding-interview.git"
+  },
+  "author": "Aashima Ahuja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aashimaahuja/cracking-frontend-coding-interview/issues"
+  },
+  "homepage": "https://github.com/aashimaahuja/cracking-frontend-coding-interview#readme"
+}
